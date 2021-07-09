@@ -1,0 +1,53 @@
+body {
+  background-image: url('../InfiniteScrolling&Filter/img/img3.jpg');
+  justify-content: center;
+}
+
+.post {
+  position: relative;
+  background-color: #c4ccd3;
+  box-shadow: 0 2px 4px rgba(72, 53, 243, 0.3);
+  border-radius: 5px;
+  padding: 20px;
+  margin: 40px 0;
+  display: flex;
+}
+
+.post .post-body {
+  margin: 5px 0 0;
+  line-height: 1.1;
+}
+
+.post .post-info {
+  margin-left: 20px;
+}
+
+.post .number {
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  font-size: 15px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #296ca8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #24282c; 
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 2s linear infinite;
+  
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
